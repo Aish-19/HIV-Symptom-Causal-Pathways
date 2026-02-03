@@ -1,7 +1,13 @@
 # Causal Pathway Analysis of HIV-Related Fatigue and Weakness
 
 ## Project Overview
-This project performs a secondary statistical analysis of clinical data from a longitudinal randomized controlled trial involving 609 participants (1,343 observations) living with HIV. The goal is to determine the causal relationships between a behavioral intervention (Treatment), muscle weakness (SSC-W), and fatigue (SSC-F) using advanced categorical data modeling.
+This project focuses on the empirical use of graphical models as a powerful framework for identifying mediating variables in causal pathways. Specifically, we investigate the causal relationships among a behavioral intervention (Treatment), muscle weakness (SSC-W), and fatigue (SSC-F) in people living with HIV (PLHIV). Fatigue and weakness are common and debilitating symptoms in PLHIV, and understanding whether one mediates the effect of treatment on the other has important clinical implications.
+
+The analysis is based on a secondary analysis of data from a longitudinal randomized controlled trial involving 609 participants and 1,343 repeated observations. All key variables are categorical, making this setting particularly suitable for contingency table analysis, graphical models, and loglinear modeling. Two competing causal hypotheses are of interest:
+1. Muscle weakness mediates the effect of treatment on fatigue, or
+2. Fatigue mediates the effect of treatment on muscle weakness.
+
+Standard causal mediation techniques were unable to provide definitive answers to these questions due to the complexity of the data structure and the categorical nature of the variables. To address this gap, this project employs graphical models to explicitly represent and compare alternative causal pathways. By leveraging conditional independence structures and loglinear models, we aim to clarify the direction of mediation and demonstrate the practical utility of graphical modeling in causal inference for categorical clinical data.
 
 ## Objective
 The primary objective is to evaluate the efficacy of the intervention and identify the structural pathways of symptoms. Specifically, the project aims to:
